@@ -7,8 +7,11 @@
     font-size: 9px;
     flex-direction: row;
     position: relative;
-
     vertical-align: top;
+
+    display: inline-block;
+    margin: 1.5%;
+
 }
 
 .feedback-score {
