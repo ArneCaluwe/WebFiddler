@@ -3,7 +3,7 @@
     min-width: 200px;
     max-width: 30%;
     background-size: 100% 100%;
-    font-size: 9px;
+    font-size: 8px;
     flex-direction: row;
     position: relative;
     vertical-align: top;
@@ -11,6 +11,33 @@
     display: inline-block;
     margin: 1.5%;
 
+}
+
+.feedback:hover{
+    font-size: 11px;
+    max-width: 40%;
+    margin-right: -3.4%;
+    margin-left: -3.5%;
+    margin-top: -3.5%;
+    z-index: 9;
+    animation-name: feedback-grow;
+    animation-duration: 0.2s;
+}
+
+@keyframes feedback-grow {
+    from {
+        font-size: 8px;
+        margin: 1.5%;
+        max-width: 30%;
+    }
+    to{
+        font-size: 11px;
+        max-width: 40%;
+        margin-right: -3.4%;
+        margin-left: -3.5%;
+        margin-top: -3.5%;
+        z-index: 9;
+    }
 }
 
 .feedback-score {
