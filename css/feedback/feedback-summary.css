@@ -1,0 +1,38 @@
+.feedback-summary{
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    height: 7%;
+    color: cornflowerblue;
+
+    vertical-align: top;
+    z-index: 99;
+    font-size: 11px;
+}
+
+.feedback-summary-title{
+    font-weight: bold;
+    font-size: 15px;
+    color: lightgrey;
+    position: relative;
+}
+
+.feedback-summary-content-left{
+    display: inline-block;
+    vertical-align: inherit;
+    width: 40%;
+    margin: 2.5%
+}
+
+.feedback-summary-content-right{
+    display: inline-block;
+    vertical-align: inherit;
+    width: 40%;
+    margin: 2.5%
+}
+
+.feedback-summary-subject{
+    display: inline;
+    color: #3B56FF;
+    font-weight: bolder;
+}
