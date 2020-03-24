@@ -14,11 +14,13 @@
 }
 
 .feedback:hover{
+    transform: scale(1.5,1.5);
     font-size: 11px;
     max-width: 33%;
     margin-right: -3.4%;
     margin-left: -3.5%;
     margin-top: -3.5%;
+
     z-index: 9;
     animation-name: feedback-grow;
     animation-duration: 0.2s;
@@ -31,12 +33,7 @@
         max-width: 20%;
     }
     to{
-        font-size: 11px;
-        max-width: 33%;
-        margin-right: -3.4%;
-        margin-left: -3.5%;
-        margin-top: -3.5%;
-        z-index: 9;
+        transform:scale(1.2,1.2);
     }
 }
 
