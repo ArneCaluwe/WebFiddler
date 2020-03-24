@@ -38,4 +38,10 @@
 .session-box:hover{
     color: white;
     cursor: pointer;
+    background-image: url("../../img/SubjectBox-highlight@2x.png");
+}
+.session-box-inactive:hover {
+    color: white;
+    cursor: unset;
+    background-image: url("../../img/SubjectBox@2x.png");
 }
