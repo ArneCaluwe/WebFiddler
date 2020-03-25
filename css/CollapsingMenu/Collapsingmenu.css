@@ -1,0 +1,125 @@
+body{
+    background-color: darkslategrey;
+}
+.iconBar{
+    resize: none;
+//overflow: hidden;
+    height: 85px;
+    background-color: deepskyblue;
+    border-radius: 35px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: inline;
+}
+.iconBar-notClicked{
+    animation-name: Shrink;
+    animation-duration: 600ms;
+    width: 350px;
+}
+.iconBar-clicked{
+    animation-name: Enlarge;
+    animation-duration: 600ms;
+    width: 620px;
+}
+@keyframes Shrink {
+    from{
+        width: 620px;
+    }
+    to{
+        width: 350px;
+    }
+
+}
+@keyframes Enlarge {
+    from {
+        width: 350px;
+    }
+    to {
+        width: 620px;
+    }
+
+}
+
+.searchBar{
+    position: static;
+    border: transparent;
+    resize: none;
+    overflow: hidden;
+    background-color: teal;
+    border-radius: 35px;
+    height: 55px;
+    width: 200px;
+    margin: 15px;
+    padding-left: 15px;
+    font-size: 46px;
+    bottom: 5px;
+}
+
+.icon-Profile{
+    animation-delay: 1s;
+    animation-name: MoveProfileRight;
+    position: absolute;
+    height: 85px;
+    width: auto;
+    margin-right: 15px;
+}
+.icon-Profile-hidden{
+    right: 15px;
+    top: 0;
+}
+.icon-Profile-shown{
+}
+@keyframes MoveProfileLeft {
+    from{
+        left: 80px;
+    }
+    to{
+        left: 0;
+    }
+}
+@keyframes MoveProfileRight {
+    from{
+        left: 0;
+    }
+    to{
+        left: 80px;
+    }
+}
+
+.icon{
+    position: relative;
+    height: 65px;
+    width: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+.icon:hover{
+    margin-top: 0;
+    margin-right: 10px;
+    height: 70px;
+    width: 70px;
+
+}
+.icon-shown{
+    animation-delay: 500ms;
+    animation-name: Appear;
+    visibility: visible;
+}
+.icon-hidden{
+    visibility: hidden;
+}
+@keyframes Appear {
+    from{
+        height: 0;
+        width: 0;
+    }
+    to{
+        height: 65px;
+        width: 65px;
+    }
+}

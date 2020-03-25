@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IconBar</title>
+    <link rel="stylesheet" href="css/CollapsingMenu/Collapsingmenu.css">
+</head>
+<body>
+<div class="iconBar iconBar-notClicked" onmouseenter="expandBar()" onmouseleave="closeBar()" id="iconBar">
+    <textarea wrap="soft" class="searchBar" id="textArea">Search Something</textarea>
+    <img src="img/settings-gears.png" class="icon icon-hidden" id="Icon-Settings">
+    <img src="img/paper-plane.png" class="icon icon-hidden" id="Icon-Send">
+    <img src="img/icon.png" class="icon icon-hidden" id="Icon-Icon">
+    <img src="img/fencer.png"  class="icon-Profile icon-Profile-hidden" id="profileIcon">
+
+</div>
+
+<script>
+    function expandBar() {
+        document.getElementById("iconBar").className="iconBar iconBar-clicked"; //expand bar
+        setTimeout(function () {
+            document.getElementById("Icon-Settings").className="icon icon-shown";
+            document.getElementById("Icon-Send").className="icon icon-shown";
+            document.getElementById("Icon-Icon").className="icon icon-shown";
+            document.getElementById("profileIcon").className = "icon-Profile icon-Profile-shown";
+        }, 500);
+
+    }
+    function closeBar() {
+
+        setTimeout(function() {
+            document.getElementById("profileIcon").className = "icon-Profile icon-Profile-hidden";
+            document.getElementById("Icon-Settings").className="icon icon-hidden";
+            document.getElementById("Icon-Send").className="icon icon-hidden";
+            document.getElementById("Icon-Icon").className="icon icon-hidden";
+            document.getElementById("iconBar").className="iconBar iconBar-notClicked";
+        }, 500);
+
+    }
+</script>
+</body>
+</html>
