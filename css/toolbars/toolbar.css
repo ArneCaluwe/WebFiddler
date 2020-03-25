@@ -1,5 +1,58 @@
-#backgImg{
-    ;
+html{
+    font-size: 80%;
 }
-.image-container{
+
+#backgImg{
+    padding: 400px 0 0;
+    background-image: url("../../img/OVOToB-2019-HEADER-CAVENDISH-1920x738@2x.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top:-200px;
+    z-index: 1;
+}
+
+.viewport-page{
+    position: absolute;
+    margin: 0;
+    background-image: url("../../img/Background_White.png");
+    background-size: 100%;
+    z-index: 10;
+}
+
+.toolbar-full{
+    position: absolute;
+    white-space: nowrap;
+    right: 0;
+    top: 0;
+    padding: 0;
+
+}
+
+.toolbar-tip{
+    display: inline-block;
+    position: relative;
+    height: 3rem;
+    margin: 0;
+}
+.toolbar-rect{
+    top:0;
+    display: inline-block;
+    white-space: nowrap;
+    background-color: #264E2B;
+    background-size: 100%;
+    margin: 0;
+}
+.toolbar-link{
+    height: 3rem;
+    margin: 0;
+    font-size: 1.5em;
+    display: inline-block;
+}
+
+#logo {
+    height: 3rem;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
