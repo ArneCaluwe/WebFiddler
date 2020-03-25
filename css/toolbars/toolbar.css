@@ -49,19 +49,19 @@ html{
 }
 
 #profileBtn{
-    background-color: blue;
-    background-size: 100%100%;
     position: absolute;
     width: 2.5rem;
     top: 0.25rem;
     right: 1.5rem;
+    z-index: 200;
 }
 
 .seasonBtn{
-    max-width: 20%;
+    text-align: right;
+    max-width: 35%;
     position: absolute;
     top: 0.25rem;
-    right: 4.5rem;
+    right: 5.5rem;
     display: inline-block;
     font-size: 1.5rem;
     color: white;
